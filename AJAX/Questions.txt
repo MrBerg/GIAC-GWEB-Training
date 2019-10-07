@@ -4,7 +4,7 @@ AJAX
     A collection of programming techniques used on client side to create interactive interfaces
 
 - What problem does it solves?
-    The content of a web page does not necessarly have to be completly reloaded everytime
+    The content of a web page does not necessarly have to be completly reloaded every time
 
 - What is the core technology used in Ajax?
     XMLHttpRequest, it is now a native JS object
@@ -18,7 +18,7 @@ AJAX
     A site is not allowed to access content received from other sites
 
 - What would happen if that policy did not exist?
-    The user goes to a malicious website, script code running on that site could access the data and functionnality of any other website also visited by the user.
+    The user goes to a malicious website, script code running on that site could access the data and functionality of any other website also visited by the user.
 
 - How do you protect your AJAX end-points on:
     - Client-side?
@@ -26,7 +26,7 @@ AJAX
 
         do not use eval
 
-        Encode before use: when using data to build html, script, css, xml, json, etc. take into account how that data must be presented in a literal sense to keep it's logical meaning. Data should be properly encoded.
+        Encode before use: when using data to build html, script, css, xml, json, etc. take into account how that data must be presented in a literal sense to keep its logical meaning. Data should be properly encoded.
 
         do not rely on client logic for security: debuggers to break into code and change values, skip code, etc. (JS can simply be disabled too)
 
@@ -41,7 +41,7 @@ AJAX
     - Server-side?
         Use CSRF protection (see CSRF topic)
 
-        Always return json with an oject on the outside
+        Always return json with an object on the outside
             exploitable: [{"object": "inside an array"}]
             not exploitable: {"result": [{"object": "inside an array"}]}
 
